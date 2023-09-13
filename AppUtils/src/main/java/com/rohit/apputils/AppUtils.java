@@ -24,6 +24,9 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.andrognito.flashbar.Flashbar;
+import com.andrognito.flashbar.anim.FlashAnim;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.ParseException;
@@ -85,7 +88,6 @@ public class AppUtils {
         toast.show();
     }
 
-/*
     public static void showSuccess(Context context, String toast_text){
         new Flashbar.Builder((Activity) context)
                 .gravity(Flashbar.Gravity.TOP)
@@ -205,7 +207,6 @@ public class AppUtils {
             }
         });
     }
-*/
 
     public static void setCountDownTimer(Context context,String match_date, TextView tv) {
         String sDate = "2017-09-08 10:05:00";
