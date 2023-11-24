@@ -27,6 +27,21 @@ android {
     }
 }
 
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'com.github.rohit19img'
+            artifactId = 'AppUtils'
+            version = "1.0.6"
+            pom {
+                description = 'DESCRIPTION'
+            }
+        }
+    }
+    repositories {               // << --- ADD This
+        mavenLocal()
+    }
+}
 
 dependencies {
 
